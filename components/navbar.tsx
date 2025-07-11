@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className=" flex bg-black text-white w-screen h-16 align-items-center justify-center">
+    <div className=" flex bg-black text-white w-full h-16 align-items-center justify-center">
       <NavigationMenu>
         <NavigationMenuList>
           {/* Logo  */}

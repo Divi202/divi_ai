@@ -8,6 +8,8 @@
   /* -----------Divi AI Theme-------- */
   --color-custom-black: var(--custom-black);
   --color-custom-white: var(--custom-white);
+  --font-heading: --font-roboto-serif;
+  --font-body: --font-roboto;
   /* -text-h1: var(--text-subhed,) */
 /* --------------------------- */
   --radius-sm: calc(var(--radius) - 4px);
