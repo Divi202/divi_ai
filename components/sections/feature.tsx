@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const FeatureSection = () => {
   return (
-    <div className="flex-row justify-center align-center max-w-screen px-10 py-20 bg-custom-black text-custom-white">
-      <div className="flex gap-16.5 justify center align-center">
-        <div className="flex justify-center align-center ">
+    <div className="flex-row justify-center items-center max-w-screen px-10 py-20 bg-custom-black text-custom-white">
+      <div className="flex gap-16.5 justify center items-center">
+        <div className="flex justify-center items-center ">
           <Image
             src="/feature.svg"
             alt="hero image"
