@@ -12,6 +12,8 @@
   --font-body: --font-roboto;
   /* -text-h1: var(--text-subhed,) */
 /* --------------------------- */
+
+/* shadcn theme config  */
   --radius-sm: calc(var(--radius) - 4px);
 
   --radius-md: calc(var(--radius) - 2px);
