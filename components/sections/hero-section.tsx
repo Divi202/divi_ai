@@ -34,7 +34,7 @@ const HeroSection = () => {
             alt="hero image"
             width={800}
             height={800}
-            className="rounded-4xl object-cover"
+            className="rounded-4xl object-cover border-2 border-custom-black"
           ></Image>
         </div>
       </div>
