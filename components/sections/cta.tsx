@@ -18,7 +18,7 @@ const CTA = () => {
           <Input
             type="email"
             placeholder="Enter you Email"
-            className="w-2/5 bg-custom-black text-custom-white px-10 rounded-4xl font-body font-semibold"
+            className="w-2/5 bg-custom-white text-custom-black px-6 rounded-4xl font-body font-semibold"
           />
           {/* CTA button  */}
 

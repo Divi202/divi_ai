@@ -18,7 +18,7 @@ const HeroSection = () => {
           <Input
             type="email"
             placeholder="Enter you Email"
-            className="w-2/5 bg-custom-black text-custom-white px-10 rounded-4xl font-body font-semibold"
+            className="w-2/5 bg-custom-black text-custom-white px-8 rounded-4xl font-body font-semibold"
           />
           <Button className="w-1/5 rounded-4xl bg-custom-black text-custom-white font-body font-semibold">
             {" "}
