@@ -25,17 +25,17 @@ const BenefitsSection = () => {
           {/* body  */}
           <div className=" flex flex-col w-3/5 gap-4">
             {" "}
-            <div className="flex gap-2  font-body font-normal text-sm">
+            <div className="flex gap-4 font-body font-normal ">
               {" "}
               <Hourglass></Hourglass>
               <p> Save time with curated outfit suggestions.</p>
             </div>
-            <div className="flex gap-2 w-4/5 font-body font-normal text-sm">
+            <div className="flex gap-4 w-4/5 font-body font-normal  ">
               {" "}
               <Smartphone></Smartphone>
               <p> Receive personalized fashion advice tailored to you.</p>
             </div>
-            <div className="flex gap-2 font-body font-normal text-sm">
+            <div className="flex gap-4 font-body font-normal ">
               {" "}
               <TrendingUp></TrendingUp>
               <p>Stay trendy with the latest fashion insights.</p>
