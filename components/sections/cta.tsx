@@ -3,7 +3,7 @@ import { Input } from "../ui/input";
 
 const CTA = () => {
   return (
-    <div className="bg-custom-white w-full px-10 py-20">
+    <div id="CTA" className="bg-custom-white w-full px-10 py-20">
       <div className="flex flex-col border-2 border-custom-white rounded-4xl bg-custom-black text-custom-white px-10 py-10 items-start ">
         {/* section-heading  */}
         <div className=" flex flex-col gap-4.5">

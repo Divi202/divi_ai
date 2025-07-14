@@ -22,12 +22,12 @@ const Navbar = () => {
       <div className="flex flex-row items-center gap-8 ">
         <ul className="flex flex-row gap-6 font-body font-normal text-custom-white">
           <li>
-            <Link href="#Features" className="hover:opacity-80">
+            <Link href="#features-list" className=" hover:opacity-80 ">
               Features
             </Link>
           </li>
           <li>
-            <Link href="#Benefits" className="hover:opacity-80">
+            <Link href="#benefits" className="hover:opacity-80">
               Benefits
             </Link>
           </li>

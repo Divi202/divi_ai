@@ -4,7 +4,10 @@ import Image from "next/image";
 const BenefitsSection = () => {
   return (
     //   feature section container
-    <div className="flex flex-row justify-center items-center max-w-screen px-10 py-20 bg-custom-black text-custom-white">
+    <div
+      id="benefits"
+      className="flex flex-row justify-center items-center max-w-screen px-10 py-20 bg-custom-black text-custom-white"
+    >
       <div className="flex gap-16.5 justify center items-center">
         {/* text  */}
         <div className=" flex flex-col items-center justify-center gap-4.5 w-4/5">

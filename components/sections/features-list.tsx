@@ -2,7 +2,10 @@ import { Clock, Shirt, Smartphone } from "lucide-react";
 
 const FeaturesList = () => {
   return (
-    <div className="bg-custom-white text-custom-black px-10 py-20 flex flex-col itmes-center justify-center gap-20">
+    <div
+      id="features-list"
+      className="bg-custom-white text-custom-black px-10 py-20 flex flex-col itmes-center justify-center gap-20"
+    >
       {" "}
       {/* section-heading  */}
       <div className=" flex flex-col items-center justify-center gap-4.5">
