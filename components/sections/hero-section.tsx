@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { Input } from "@/components/ui/input";
+
+import WaitlistForm from "./common/waitlistform";
 const HeroSection = () => {
   return (
     <div className="flex-row justify-center items-center w-full px-10 py-20 bg-custom-white text-custom-black">
@@ -15,15 +15,8 @@ const HeroSection = () => {
             create stunning outfits tailored to your unique taste and
             personality.
           </p>
-          <Input
-            type="email"
-            placeholder="Enter you Email"
-            className="w-2/5 bg-custom-black text-custom-white px-8 rounded-4xl font-body font-semibold"
-          />
-          <Button className="w-1/5 rounded-4xl bg-custom-black text-custom-white font-body font-semibold">
-            {" "}
-            Join the waitlist
-          </Button>
+          {/* Waitlist form  */}
+          <WaitlistForm variant="dark"></WaitlistForm>
           <p className=" text-sm w-2/5 font-body font-normal">
             Be the first to try it when we launch.
           </p>
