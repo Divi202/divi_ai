@@ -12,6 +12,7 @@ const WaitlistForm = ({ variant }) => {
 
   // Function to handle joining the waitlist
   const handleJoinWaitlist = async () => {
+    // Validate email using Zod schema
     const result = ctaSchema.safeParse({ email });
     if (!result.success) {
       toast.error("Please enter a valid email address."); // show validation error
@@ -19,8 +20,9 @@ const WaitlistForm = ({ variant }) => {
     }
 
     setLoading(true);
+    // Send email data to the server
     try {
-      const res = await fetch("/api/subscribe", {
+      const res = await fetch("/api/join-waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -49,31 +51,20 @@ const WaitlistForm = ({ variant }) => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      {/* CTA button  */}
 
+      {/* CTA button  */}
       <Button
         onClick={handleJoinWaitlist}
         disabled={loading}
-        className={`w-2/10 rounded-4xl font-body font-semibold hover:bg-custom-white hover:opacity-80 transition-colors duration-300 ${
+        className={`w-2/10 rounded-4xl font-body font-semibold hover:opacity-80 transition-colors duration-300 ${
           variant === "light"
-            ? "bg-custom-white text-custom-black"
-            : "bg-custom-black text-custom-white"
+            ? "bg-custom-white text-custom-black hover:bg-custom-white"
+            : "bg-custom-black text-custom-white hover: bg-custom-black "
         }`}
       >
         {" "}
         {loading ? "Joining..." : "Join the waitlist"}
       </Button>
-
-      {/* dark */}
-      {/* <Input
-        type="email"
-        placeholder="Enter you Email"
-        className="w-2/5 bg-custom-black text-custom-white px-8 rounded-4xl font-body font-semibold"
-      />
-      <Button className="w-1/5 rounded-4xl bg-custom-black text-custom-white font-body font-semibold">
-        {" "}
-        Join the waitlist
-      </Button> */}
     </>
   );
 };
