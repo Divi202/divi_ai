@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 import { ctaSchema } from "@/zod_schema/CTA";
 import { supabase } from "@/lib/server";
-
+/**
+ * API route to handle joining the waitlist.
+ * Validates the email and inserts it into the 'waitlist' table in Supabase.
+ */
 export async function POST(req: Request) {
   try {
     const body = await req.json();
@@ -15,11 +18,12 @@ export async function POST(req: Request) {
     }
 
     const { email } = result.data;
-
-    // ✅ Insert into Supabase
-    const { error } = await supabase
-      .from("waitlist") // your table name
-      .insert({ email });
+    // Sending data to the waitlist table in Supabase
+    //Note: RLS is disabled for this table, so we can access the data directly
+    const { data, error } = await supabase
+      .from("waitlist")
+      .insert([{ email }])
+      .select();
 
     if (error) {
       console.error(error);
@@ -30,7 +34,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json(
-      { message: "Successfully joined the waitlist" },
+      { message: "Successfully joined the waitlist", data },
       { status: 200 }
     );
   } catch (err) {
