@@ -12,7 +12,7 @@ const ContactUs = () => {
       <div className="flex-1 w-full bg-custom-white flex justify-center py-20">
         <Card className="w-[500px] h-[300px] p-4 bg-custom-black text-custom-white flex flex-col items-center justify-center gap-4">
           <CardHeader className="w-full text-center">
-            <CardTitle className="text-4xl">Contact Us</CardTitle>
+            <CardTitle className="text-3xl font-bold">Contact Us</CardTitle>
             <p className="text-sm text-custom-white py-3">
               If you have any questions, feedback, or concerns, feel free to
               reach out to us.
