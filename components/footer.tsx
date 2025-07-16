@@ -10,11 +10,11 @@ const Footer = () => {
         © 2025 DiviAI. All rights reserved.
       </p>
       {/* Logo */}{" "}
-      <div className=" flex px-90 justify-center">
+      <div className=" flex px-100 justify-center">
         <Image
           src="/Logo.svg"
-          width={70}
-          height={70}
+          width={50}
+          height={50}
           alt="Divi AI logo"
           className="text-custom-white "
         />{" "}
@@ -40,13 +40,14 @@ const Footer = () => {
             className=" flex flex-row  hover:opacity-80"
           >
             <Image
+              className="bg-custom-white rounded-full "
               src="/instagram.svg"
               alt="instagram logo"
-              width={25}
-              height={25}
+              width={28}
+              height={28}
             />
           </Link>
-          <Link
+          {/* <Link
             href="#facebook link"
             className="bg-custom-black hover:opacity-80"
           >
@@ -56,7 +57,7 @@ const Footer = () => {
               width={25}
               height={25}
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

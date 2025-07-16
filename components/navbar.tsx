@@ -3,6 +3,9 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 
 const Navbar = () => {
+  const currentUrl = typeof window !== "undefined" ? window.location.href : "";
+  console.log("Current URL:", currentUrl);
+
   return (
     <div className="relative w-full h-16 flex flex-row items-center justify-end bg-custom-black text-custom-white px-10 fixed">
       {/* Logo */}{" "}
