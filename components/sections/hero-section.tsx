@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="flex-row justify-center items-center w-full px-10 py-20 bg-custom-white text-custom-black">
       <div className="flex gap-16.5 justify center items-center">
         <div className=" flex flex-col items-start justify-center gap-4.5 w-4/5">
-          <h1 className="text-7xl w-4/5 font-heading font-extrabold">
+          <h1 className="text-7xl w-4/5 font-heading font-extrabold drop-shadow-lg drop-shadow-custom-black ">
             Never Worry About What To Wear Again
           </h1>
           {/* subheading */}
@@ -27,7 +27,7 @@ const HeroSection = () => {
             alt="hero image"
             width={800}
             height={800}
-            className="rounded-4xl object-cover border-2 border-custom-black"
+            className="rounded-4xl border-3 border-custom-black shadow-lg shadow-custom-black "
           ></Image>
         </div>
       </div>

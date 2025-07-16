@@ -46,13 +46,13 @@ const BenefitsSection = () => {
           </div>
         </div>
         {/* image  */}
-        <div className="flex justify-center items-center  ">
+        <div className="flex justify-center items-center">
           <Image
             src="/benefits.svg"
             alt="benefits image"
             width={800}
             height={800}
-            className="rounded-4xl object-cover border-2 border-custom-white"
+            className="rounded-4xl border-3 border-custom-white shadow-lg shadow-custom-white"
           ></Image>
         </div>
       </div>

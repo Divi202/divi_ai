@@ -10,7 +10,7 @@ const FeatureSection = () => {
             alt="hero image"
             width={800}
             height={800}
-            className="rounded-4xl object-cover border-2 border-custom-white"
+            className="rounded-4xl object-cover border-3 border-custom-white shadow-lg shadow-custom-white"
           ></Image>
         </div>
         <div className=" flex flex-col items-center justify-center gap-4.5 w-4/5">
