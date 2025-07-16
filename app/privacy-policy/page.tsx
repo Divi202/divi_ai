@@ -4,9 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="flex min-h-screen flex-col bg-custom-white">
+    <div className="flex min-h-screen flex-col bg-custom-white ">
       <Navbar></Navbar>
-      <div className=" flex-1 max-w-3xl mx-auto p-4 ">
+      <div className=" flex-1 max-w-5xl mx-auto py-10 px-4">
         <Card className="bg-custom-black opacity-98 text-custom-white rounded-lg shadow-lg">
           <CardHeader>
             <CardTitle className="text-3xl font-bold">Privacy Policy</CardTitle>
