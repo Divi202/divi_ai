@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="w-full h-16 flex flex-row items-center justify-end bg-custom-black text-custom-white px-10 ">
+    <div className="w-full h-16 flex flex-row items-center justify-end bg-custom-black text-custom-white px-10">
       {/* copywrite text  */}
       <p className="font-body flex-1 font-normal text-custom-white">
         © 2025 DiviAI. All rights reserved.

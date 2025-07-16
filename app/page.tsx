@@ -10,21 +10,22 @@ import HeroSection from "@/components/sections/hero-section";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       {/* navbar */}
       <Navbar />
-      {/* hero section  */}
-      <HeroSection />
-      {/* feature section  */}
-      <FeatureSection />
-      {/* features list section  */}
-      <FeaturesList />
-      {/* benefits section  */}
-      <BenefitsSection />
-      {/* cta section  */}
-      <CTA />
-      {/* footer  */}
+      <main className="flex-1">
+        {/* hero section  */}
+        <HeroSection />
+        {/* feature section  */}
+        <FeatureSection />
+        {/* features list section  */}
+        <FeaturesList />
+        {/* benefits section  */}
+        <BenefitsSection />
+        {/* cta section  */}
+        <CTA />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
