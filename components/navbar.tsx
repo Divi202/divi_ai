@@ -10,7 +10,7 @@ const Navbar = () => {
   const isHomePage = pathname === "/";
 
   return (
-    <div className="relative w-full h-16 flex flex-row items-center justify-end bg-custom-black text-custom-white px-10 fixed">
+    <div className="relative w-full max-h-16 flex flex-row items-center justify-end bg-custom-black text-custom-white px-5 md:px-10 fixed py-2 md:py-4">
       {/* Logo */}
       <div className=" flex flex-1 justify-self-start">
         <Link href="/">
@@ -27,9 +27,9 @@ const Navbar = () => {
       {/* navlinks  + join btn*/}
       {isHomePage && (
         <div className="flex flex-row items-center gap-8 ">
-          <ul className="flex flex-row gap-6 font-body font-normal text-custom-white">
+          <ul className="hidden md:flex flex-row gap-6 font-body font-normal text-custom-white">
             <li>
-              <Link href="#features-list" className=" hover:opacity-80 ">
+              <Link href="#features-list" className=" hover:opacity-80">
                 Features
               </Link>
             </li>
@@ -42,7 +42,8 @@ const Navbar = () => {
 
           <Button
             variant="outline"
-            className="font-body font-semibold rounded-4xl px-6 drop-shadow-custom-white-md bg-custom-white text-custom-black hover:bg-custom-white hover:opacity-80 "
+            size="sm"
+            className="font-body font-semibold rounded-4xl px-6 drop-shadow-custom-white-md bg-custom-white text-custom-black hover:bg-custom-white hover:opacity-80"
           >
             <Link href="#CTA">Join</Link>
           </Button>
