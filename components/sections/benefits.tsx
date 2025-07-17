@@ -6,19 +6,19 @@ const BenefitsSection = () => {
     //   feature section container
     <div
       id="benefits"
-      className="flex flex-row justify-center items-center max-w-screen px-10 py-20 bg-custom-black text-custom-white"
+      className="flex flex-row justify-center items-center max-w-screen px-5 py-10 md:px-10 md:py-20 bg-custom-black text-custom-white"
     >
-      <div className="flex gap-16.5 justify center items-center">
+      <div className="flex flex-col lg:flex-row gap-4 md:gap-8 lg:gap-auto justify center items-center">
         {/* text  */}
-        <div className=" flex flex-col items-center justify-center gap-4.5 w-4/5">
+        <div className=" flex flex-col items-center justify-center gap-2 md:gap-4 lg:w-4/5">
           {/* header  */}
-          <div className="flex flex-col items-center justify-center gap-4.5">
+          <div className="flex flex-col items-center justify-center gap-2 md:gap-4 ">
             {" "}
-            <h2 className="text-5xl w-3/5 font-heading font-bold ">
+            <h2 className="text-center lg:text-start text-xl md:text-3xl lg:text-5xl  lg:w-3/5 font-heading font-bold ">
               Experience the Styling Revolution: Effortless Style at Your
               Fingertips
             </h2>
-            <p className="w-3/5 font-body font-light text-xl ">
+            <p className="text-center lg:text-start lg:w-3/5 font-body font-light text-sm md:text-lg lg:text-xl">
               Experience a personalized fashion journey that saves you time and
               enhances your style. Our AI-stylist curates outfits tailored just
               for you, ensuring you always look your best.
@@ -26,21 +26,42 @@ const BenefitsSection = () => {
           </div>
 
           {/* body  */}
-          <div className=" flex flex-col w-3/5 gap-4">
+          <div className=" flex flex-col items-center lg:items-start lg:w-3/5 gap-2 md:gap-4 ">
             {" "}
-            <div className="flex gap-4 font-body font-normal ">
+            <div className="flex gap-2 md:gap-4 font-body font-normal text-xs md:text-base ">
               {" "}
-              <Hourglass></Hourglass>
+              <div className="hidden md:flex">
+                {" "}
+                <Hourglass></Hourglass>
+              </div>
+              <div className="md:hidden">
+                {" "}
+                <Hourglass size={16}></Hourglass>
+              </div>
               <p> Save time with curated outfit suggestions.</p>
             </div>
-            <div className="flex gap-4 w-4/5 font-body font-normal  ">
+            <div className="flex gap-2 md:gap-4 lg:w-4/5 font-body font-normal text-xs md:text-base  ">
               {" "}
-              <Smartphone></Smartphone>
+              <div className="hidden md:flex">
+                {" "}
+                <Smartphone></Smartphone>
+              </div>
+              <div className="md:hidden">
+                {" "}
+                <Smartphone size={16}></Smartphone>
+              </div>
               <p> Receive personalized fashion advice tailored to you.</p>
             </div>
-            <div className="flex gap-4 font-body font-normal ">
+            <div className="flex gap-2 md:gap-4 font-body font-normal text-xs md:text-base">
               {" "}
-              <TrendingUp></TrendingUp>
+              <div className="hidden md:flex">
+                {" "}
+                <TrendingUp></TrendingUp>
+              </div>
+              <div className="md:hidden">
+                {" "}
+                <TrendingUp size={16}></TrendingUp>
+              </div>
               <p>Stay trendy with the latest fashion insights.</p>
             </div>
           </div>
