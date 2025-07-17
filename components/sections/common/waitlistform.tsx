@@ -42,10 +42,10 @@ const WaitlistForm = ({ variant }) => {
       <Input
         type="email"
         placeholder="Enter you Email"
-        className={`w-2/5 rounded-4xl font-body font-semibold ${
+        className={`w-4/5 md:w-2/5 rounded-4xl font-body font-semibold ${
           variant === "light"
-            ? "bg-custom-white text-custom-black px-6"
-            : "px-8 bg-custom-black text-custom-white"
+            ? "bg-custom-white text-custom-black px-8"
+            : "px-8 bg-custom-black text-custom-white "
         }`}
         required
         value={email}
@@ -56,11 +56,12 @@ const WaitlistForm = ({ variant }) => {
       <Button
         onClick={handleJoinWaitlist}
         disabled={loading}
-        className={`w-2/10 rounded-4xl font-body font-semibold hover:opacity-80 transition-colors duration-300 ${
+        className={`w-4/10 md:w-2/10 rounded-4xl font-body font-semibold hover:opacity-80 transition-colors duration-300 ${
           variant === "light"
             ? "bg-custom-white text-custom-black hover:bg-custom-white"
             : "bg-custom-black text-custom-white hover: bg-custom-black "
         }`}
+        size="sm"
       >
         {" "}
         {loading ? "Joining..." : "Join the waitlist"}

@@ -42,7 +42,7 @@ const Navbar = () => {
 
           <Button
             variant="outline"
-            size="sm"
+            // size="sm"
             className="font-body font-semibold rounded-4xl px-6 drop-shadow-custom-white-md bg-custom-white text-custom-black hover:bg-custom-white hover:opacity-80"
           >
             <Link href="#CTA">Join</Link>
