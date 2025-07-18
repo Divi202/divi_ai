@@ -9,7 +9,7 @@ const CTA = () => {
           <h2 className="text-5xl font-heading font-bold ">
             Your Personal AI Stylist is Coming
           </h2>
-          <p className="font-body font-light text-xl r">
+          <p className="font-body font-light text-xl">
             Join hundreds of early users waiting to try it first.
           </p>
           {/* Waitlist form */}
