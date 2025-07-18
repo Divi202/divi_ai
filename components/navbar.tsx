@@ -12,12 +12,24 @@ const Navbar = () => {
   return (
     <div className="relative w-full max-h-16 flex flex-row items-center justify-end bg-custom-black text-custom-white px-5 md:px-10 fixed py-2 md:py-4">
       {/* Logo */}
-      <div className=" flex flex-1 justify-self-start">
+      <div className="hidden md:flex flex-1 justify-self-start">
         <Link href="/">
           <Image
             src="/Logo.svg"
             width={70}
             height={70}
+            alt="Divi AI logo"
+            className="text-custom-white hover:opacity-80"
+          />
+        </Link>
+      </div>
+      {/* Logo  -> mobile screen*/}
+      <div className="md:hidden flex flex-1 justify-self-start">
+        <Link href="/">
+          <Image
+            src="/Logo.svg"
+            width={50}
+            height={50}
             alt="Divi AI logo"
             className="text-custom-white hover:opacity-80"
           />
@@ -43,7 +55,7 @@ const Navbar = () => {
           <Button
             variant="outline"
             // size="sm"
-            className="font-body font-semibold rounded-4xl px-6 drop-shadow-custom-white-md bg-custom-white text-custom-black hover:bg-custom-white hover:opacity-80"
+            className="h-6 md:h-9 font-body font-semibold rounded-4xl px-4 md:px-6 drop-shadow-custom-white-md bg-custom-white text-custom-black hover:bg-custom-white hover:opacity-80"
           >
             <Link href="#CTA">Join</Link>
           </Button>
