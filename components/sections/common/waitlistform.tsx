@@ -42,10 +42,10 @@ const WaitlistForm = ({ variant }) => {
       <Input //text-base
         type="email"
         placeholder="Enter you Email"
-        className={`h-7 md:h-9 w-4/5 md:w-2/5 placeholder:text-center md:placeholder:text-start placeholder:text-xs md:placeholder:text-sm rounded-4xl font-body font-semibold ${
+        className={`h-7 md:h-9 w-4/5 md:w-3/5 lg:w-2/5 placeholder:text-center md:placeholder:text-start placeholder:text-xs md:placeholder:text-sm rounded-4xl font-body font-semibold ${
           variant === "light"
-            ? "bg-custom-white text-custom-black lg:px-6"
-            : "bg-custom-black text-custom-white md:px-22 lg:px-10"
+            ? "bg-custom-white text-custom-black md:pl-5 lg:px-6"
+            : "bg-custom-black text-custom-white md:pl-40 lg:px-10"
         }`}
         required
         value={email}
@@ -56,7 +56,7 @@ const WaitlistForm = ({ variant }) => {
       <Button //text-sm
         onClick={handleJoinWaitlist}
         disabled={loading}
-        className={`h-7 md:h-9 w-4/10 md:w-2/10 rounded-4xl text-xs md:text-sm font-body font-semibold hover:opacity-80 transition-colors duration-300 ${
+        className={`h-7 md:h-9 w-4/10 md:w-3/10 lg:w-2/10 rounded-4xl text-xs md:text-sm font-body font-semibold hover:opacity-80 transition-colors duration-300 ${
           variant === "light"
             ? "bg-custom-white text-custom-black hover:bg-custom-white"
             : "bg-custom-black text-custom-white hover:bg-custom-black"
