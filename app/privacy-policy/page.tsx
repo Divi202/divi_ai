@@ -6,15 +6,17 @@ const PrivacyPolicy = () => {
   return (
     <div className="flex min-h-screen flex-col bg-custom-white ">
       <Navbar></Navbar>
-      <div className=" flex-1 max-w-5xl mx-auto py-10 px-4">
+      <div className=" flex-1 max-w-5xl mx-auto py-5 px-5 md:py-10 md:px-10">
         <Card className="bg-custom-black opacity-98 text-custom-white rounded-lg shadow-lg">
           <CardHeader>
-            <CardTitle className="text-3xl font-bold">Privacy Policy</CardTitle>
-            <p className="text-sm text-custom-white">
-              Last updated: July 15, 2025
+            <CardTitle className="font-heading font-bold text-2xl md:text-3xl">
+              Privacy Policy
+            </CardTitle>
+            <p className="text-sm font-light text-custom-white">
+              Last updated: July 20, 2025
             </p>
           </CardHeader>
-          <CardContent className="space-y-4 text-sm leading-6 text-custom-white ">
+          <CardContent className="font-light space-y-4 text-sm leading-6 text-custom-white ">
             <p>
               We at <strong>Divi AI </strong> (“we”, “our”, “us”) respect your
               privacy and are committed to protecting it. This Privacy Policy

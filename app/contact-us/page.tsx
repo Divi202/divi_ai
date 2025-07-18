@@ -8,11 +8,13 @@ const ContactUs = () => {
   return (
     <div className="flex min-h-screen flex-col bg-custom-white">
       <Navbar></Navbar>
-      <div className="flex-1 w-full bg-custom-white flex justify-center py-20">
-        <Card className="w-[500px] h-[300px] p-4 bg-custom-black text-custom-white flex flex-col items-center justify-center gap-4">
+      <div className="flex flex-1 w-full bg-custom-white justify-center px-2 py-20">
+        <Card className="w-[500px] h-[300px] p-4  bg-custom-black text-custom-white flex flex-col items-center justify-center gap-4">
           <CardHeader className="w-full text-center">
-            <CardTitle className="text-3xl font-bold">Contact Us</CardTitle>
-            <p className="text-sm text-custom-white py-3 ">
+            <CardTitle className="font-heading font-bold text-2xl md:text-3xl ">
+              Contact Us
+            </CardTitle>
+            <p className=" font-light text-sm text-custom-white py-3 ">
               If you have any questions, feedback, or concerns, feel free to
               reach out to us.
             </p>
@@ -21,14 +23,14 @@ const ContactUs = () => {
             <div className="flex flex-col items-center gap-2">
               <div className="flex gap-2 items-center">
                 {" "}
-                <p className="text-sm ">Email us at:</p>
+                <p className=" font-light text-sm ">Email us at:</p>
                 <Link href={`mailto:${email}`}>
-                  <p className=" text-sm text-custom-white font-bold  ">
+                  <p className="text-sm text-custom-white font-bold  ">
                     {email}
                   </p>
                 </Link>
               </div>
-              <p className=" text-muted-foreground text-xs text-custom-white mt-2">
+              <p className="text-muted-foreground text-xs text-custom-white mt-2">
                 We usually respond within 2–3 business days.
               </p>
             </div>
