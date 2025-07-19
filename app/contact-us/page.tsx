@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 const ContactUs = () => {
-  const email = "support@diviai.com"; // replace with your email
+  const email = "diviaicontact@gmail.com"; // replace with your email
   return (
     <div className="flex min-h-screen flex-col bg-custom-white">
       <Navbar></Navbar>

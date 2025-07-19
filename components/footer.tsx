@@ -37,7 +37,8 @@ const Footer = () => {
         <div className="flex flex-row gap-4 items-center ">
           {/* only for medium and big screen  */}
           <Link
-            href="#instagram link"
+            href="https://www.instagram.com/diviai_official/"
+            target="/"
             className="hidden md:flex flex-row  hover:opacity-80"
           >
             <Image
@@ -50,7 +51,8 @@ const Footer = () => {
           </Link>
           {/* only for samll screen  */}
           <Link
-            href="#instagram link"
+            href="https://www.instagram.com/diviai_official/"
+            target="/"
             className="flex md:hidden flex-row  hover:opacity-80"
           >
             <Image

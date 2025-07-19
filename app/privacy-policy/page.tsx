@@ -87,10 +87,10 @@ const PrivacyPolicy = () => {
             <p>
               📧{" "}
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:diviaicontact@gmail.com"
                 className="text-blue-600 hover:underline"
               >
-                your-email@example.com
+                diviaicontact@gmail.com
               </a>
             </p>
 
