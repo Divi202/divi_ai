@@ -5,7 +5,12 @@ import { ctaSchema } from "@/zod_schema/CTA";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-const WaitlistForm = ({ variant }) => {
+// Define the type for the variant prop
+interface WaitlistFormProps {
+  variant: "light" | "dark"; // Or "primary" | "secondary" etc., depending on your variants
+}
+
+const WaitlistForm = ({ variant }: WaitlistFormProps) => {
   // State to manage email input and loading state
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
